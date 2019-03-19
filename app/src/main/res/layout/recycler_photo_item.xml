@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/recycler_photo_item_border"
-    android:padding="10dp"
-    android:orientation="vertical">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tvPhotoTitle"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:textAlignment="center"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/recycler_photo_item_border"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    <TextView
-        android:id="@+id/tvPhotoUrl"
-        android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvPhotoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
 
-    <ImageView
-        android:id="@+id/ivPhotoThumbnail"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/tvPhotoUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/ivPhotoThumbnail"
+            android:layout_width="@dimen/recycler_item_photos_size"
+            android:layout_height="@dimen/recycler_item_photos_size" />
+    </LinearLayout>
+</RelativeLayout>

@@ -2,7 +2,6 @@ package com.example.mini.rationaltech.adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Rect;
 import android.net.Uri;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,9 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by xxx on 18/03/2019.
+ * Creates an album with title and list of photos
  */
-
 public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHolder> {
     private List<AlbumPhotoWrapper> albums = new ArrayList<>();
     private AlbumInterface listener;
